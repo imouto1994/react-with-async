@@ -1,6 +1,6 @@
 {
   "name": "react-with-async",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "A higher order component for asynchronous loading component",
   "main": "lib/index.js",
   "author": "Nhan Bui <imouto1994@gmail.com>",
@@ -13,6 +13,12 @@
     "eslint-check": "eslint --print-config .eslintrc.js | eslint-config-prettier-check",
     "precommit": "lint-staged",
     "prepublish": "yarn build"
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --write --trailing-comma es5",
+      "git add"
+    ]
   },
   "devDependencies": {
     "babel": "6.23.0",
