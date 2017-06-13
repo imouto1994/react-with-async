@@ -1,0 +1,49 @@
+{
+  /* Extends from AirBnB Configuration */
+  "extends": [
+    "eslint:recommended",
+    "google",
+    "plugin:react/recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:jsx-a11y/recommended",
+    "prettier",
+    "prettier/react",
+  ],
+
+  /* Override Rules */
+  "rules": {
+    /* ESLint */
+    "no-invalid-this": 0,
+    "new-cap": 0,
+
+    /* React Plugin */
+    "react/display-name": 0,
+  },
+
+  /* Linting Environment */
+  "env": {
+    "node": true,
+    "es6": true,
+    "browser": true,
+  },
+
+  /* Linting Parser */
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "sourceType": "module",
+  },
+
+  /* Linting Plugins */
+  "plugins": [
+    "react",
+    "import",
+    "jsx-a11y",
+  ],
+
+  /* Global Variable */
+  "globals": {
+    "BROWSER": false,
+    "_FEATURE_": false,
+  }
+}
